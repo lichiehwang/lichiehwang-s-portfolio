@@ -361,5 +361,8 @@ html {
     position: static;
     text-align: center;
   }
+  .accordion-area{
+    margin:80px auto;
   
+  }
 }
