@@ -333,3 +333,33 @@ html {
 		opacity: 1;
 	}
 }
+
+
+/* CSS for screens less than 767px */
+@media screen and (max-width: 1310px) {
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4,
+  .circle5 {
+    display: none;
+  }
+  .profile{
+    margin:0 auto;
+    margin-top: 50px;
+  }
+  .word {
+    position: static;
+    text-align: center;
+  }
+  
+  .accordion-area {
+    margin:70px 0;
+  }
+  .profile h1,
+  .profile h2{
+    position: static;
+    text-align: center;
+  }
+  
+}
