@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  background-color: #f0cbcc;
+  font-family: "Avenir";
+}
+
+/* Header */
+#header {
+  background-color: #f0cbcc;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle1 {
+  width: 1000px;
+  height: 1000px;
+  background-color: #1d2b70;
+  border-radius: 50%;
+  position: absolute;
+  top: -400px;
+  right: -200px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.word {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+  top: 150px;
+  right: 50px;
+  letter-spacing: 1px;
+}
+
+.profile {
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.profile h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #a29994;
+  font-size: 60px;
+  letter-spacing: 20px;
+  color: white;
+}
+
+.profile h3 {
+  letter-spacing: 3px;
+  writing-mode: vertical-lr;
+  font-size: 25px;
+  color: white;
+  opacity: 0.8;
+}
+
+.profile h1 {
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 10px;
+  color: #1d2b70;
+  text-shadow: 2px 2px 4px #a29994;
+  text-align: center;
+}
+
+/* About */
+#about {
+  position: relative;
+}
+
+.accordion-area {
+  max-width: 900px;
+  margin: 200px auto;
+  list-style: none;
+  width: 96%;
+}
+
+.accordion-area li {
+  margin: 35px 0;
+}
+
+.accordion-area section {
+  border-bottom: 2px solid white;
+}
+
+.title {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 1% 1% 1% 25px;
+  transition: all 0.5s ease;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 1px #a29994;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+.title::before {
+  top: 48%;
+  right: 15px;
+  transform: rotate(0deg);
+}
+
+.title::after {
+  top: 48%;
+  right: 15px;
+  transform: rotate(90deg);
+}
+
+.title.close::before {
+  transform: rotate(45deg);
+}
+
+.title.close::after {
+  transform: rotate(-45deg);
+}
+
+.box {
+  display: none;
+  background: #f3f3f3;
+  margin: 0 3% 3% 3%;
+  padding: 1%;
+  line-height: 2;
+  color: #1d2b70;
+}
+
+/* Layout CSS */
+.circle2 {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: 80px;
+}
+
+.circle3 {
+  width: 40px;
+  height: 40px;
+  background-color: #1d2b70;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 130px;
+}
+
+.circle4 {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -60px;
+  right: 80px;
+}
+
+.circle5 {
+  width: 40px;
+  height: 40px;
+  background-color: #1d2b70;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  right: 130px;
+}
+
+/* Work */
+#work {
+  background-color: #1d2b70;
+  padding: 50px;
+  border: #ffffff 20px solid;
+}
+
+#work h1 {
+  color: white;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #a29994;
+  text-align: center;
+}
+
+.web-container {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.web {
+  width: 330px;
+  height: 250px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.web img {
+  width: 315px;
+  height: 180px;
+  object-fit: cover;
+  transition: box-shadow 0.3s;
+}
+
+.web:hover img,
+.web:focus img {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.web h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s;
+}
+
+.web:hover h3,
+.web:focus h3 {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Graphic */
+#graphic {
+  background-color: #f3f3f3;
+  border: #f0cbcc 20px solid;
+  padding: 50px;
+}
+
+#graphic h1 {
+  color: #f196a7;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #a29994;
+  text-align: center;
+}
+
+.graflex {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.graflex img {
+  max-width: 240px;
+  max-height: 170px;
+  margin: 50px;
+}
+/* workgraphic */
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+  list-style: none;
+}
+.tab li a{
+  font-size: 16px;
+  color:#1d2b70;
+  font-weight: bold;
+  text-decoration: none;
+	display: block;
+	background:#e9e6e6;
+	margin:0 2px;
+	padding:10px 20px;
+ 
+
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+	background:#fff;
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
