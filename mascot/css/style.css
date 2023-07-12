@@ -1,0 +1,207 @@
+
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+#header{
+    background-color: #8bbee9;
+    position:relative;
+    height:2500px;
+     
+}
+.topword{
+   writing-mode: vertical-rl; 
+   text-align: top;
+   float: right;
+   margin-top: -500px;
+   font-size: 2.5rem;
+   color:white;
+   margin-right: 300px;
+   line-height: 2.2;
+   text-decoration: underline #008ad5 40px ;
+   text-underline-offset: -2rem;
+   font-family: 	'ヒラギノ角ゴシック';
+}
+
+.rainbow{
+    margin:100px auto;
+  text-align: center;
+}
+.learn{
+    position:absolute;
+    top:1500px;
+    left:100px;  
+}
+.sightsee{
+    position:absolute;
+    top:1600px;
+  left:800px;   
+}
+.farm{
+    position:absolute;
+   top:2000px;
+   left:300px;
+}
+.more2{
+    position:absolute;
+    top:2300px;
+   right:300px;
+}
+
+.more3{
+    padding-top: 200px;
+    float: right;  
+}
+#main {
+    background-color: white;
+    position:relative;
+   
+}
+#main1{
+   
+    background-image: url(../img/wallpaper.png)  ;
+    background-repeat: no-repeat;
+    height:800px;
+   background-size: 80%;
+  background-position: center;
+}
+.wp{
+   padding-top:350px;
+   max-width: 1200px;
+    margin:50px auto;
+    display:flex;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+    text-align: center;
+ 
+}
+.wallpaper{
+    z-index: -30;;
+}
+.p1 {
+    position: absolute;
+    left:10px;
+    top:50px;
+   
+}
+.p2{
+    position: absolute;
+    left:100px;
+    top:350px; 
+}
+.p3{
+    position: absolute;
+    left:10px;
+    top:650px; 
+}
+.p4{
+    position: absolute;
+    left:100px;
+    top:950px; 
+}
+.p5 {
+    position: absolute;
+    right:10px;
+    top:50px;
+   
+}
+.p6{
+    position: absolute;
+    right:100px;
+    top:350px; 
+}
+.p7{
+    position: absolute;
+    right:10px;
+    top:650px; 
+}
+.p8{
+    position: absolute;
+    right:100px;
+    top:950px; 
+}
+.line, .phone {
+    padding-top:50px;
+    text-align: center;
+}
+
+.main{
+    padding-top:40px ;
+   
+     max-width:80%;
+     margin:0px auto;
+}
+.fly{
+  margin-top: 100px;
+    text-align: left;
+}
+.wall{
+    text-align: center;
+    margin:80px;
+}
+#main2{
+    background-color: #8bbee9; 
+    position:relative;
+
+}
+
+.audio{
+    text-align: center;
+    padding:10px;
+}
+.sing{
+    position:absolute;
+    left:0;
+    top:100px;
+    
+
+}
+.song{
+    
+    padding-top:100px;
+    max-width: 50%;
+    margin:0 auto;
+    }
+
+.lyric{
+    text-align: center;
+    margin:0 auto;
+  max-width: 60%;
+  padding-bottom: 400px;
+}
+.shadow1{
+    position:absolute;
+    left:10px;
+    bottom:-30px;
+}
+.shadow2{
+    position:absolute;
+    right:10px;
+    bottom:-30px;
+}
+#footer{
+    background-color: #008ad5;
+    position: relative;
+  
+   
+}
+.hyogo{padding:50px;}
+.big{
+    margin:0 auto;
+}
+.big img:hover{transform:scale(1.2,1.2);}
+.fb{
+    position: absolute;
+    right:100px;
+    top:100px;
+}
+.yt{
+    position: absolute;
+    right:150px;
+    top:105px; 
+}
+.twitter{
+    position: absolute;
+    right:200px;
+    top:100px;   
+}
