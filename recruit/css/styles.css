@@ -1,0 +1,817 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+  overflow-x: hidden;
+  font-family: "Avenir";
+}
+/*------- header---------- */
+#header{
+    background-color: #EFE9DC;
+    height:765px;
+    position: relative;}
+  
+.logo{
+    display: block;
+  padding-top:20px;
+  padding-bottom: 20px;
+    background-color: #355760;
+    width:100px;
+   text-align: center;
+}
+/*　ハンバーガーボタン　*/
+.hamburger {
+    display : block;
+    position: fixed;
+    z-index : 4;
+    right : 13px;
+    top   : 12px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    background : #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    background :#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    background :#fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 3;
+    top  : 0;
+    right : 0;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    width: 25%;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+  
+  nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    background :#ddd;
+   
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1.5em 0;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+  
+  }
+  
+.flex1{
+    z-index: 2;
+    position:absolute;
+    left:13vw;
+    bottom:6vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   gap: 34px;
+    width:75vw;
+    align-items:center;
+}
+.slogan{
+  font-weight: bold;
+}
+#header h1{
+    letter-spacing: 0.1em;
+    font-size: 74px;
+    color:#355760;
+    background: linear-gradient(transparent 60%, #E5AA73 60%);
+  
+}
+#header h2{
+    letter-spacing: 0.1em;
+    font-size: 90px;
+    color:#355760;
+    background: linear-gradient(transparent 60%, #E5AA73 60%);
+   
+}
+
+   .circle{
+    
+   z-index: 1;
+   position:absolute;
+   right:-50px;
+   bottom:-50px;
+    display:block;
+    width:600px;
+    height:600px;
+    border-radius: 50%;
+    border:3px solid #355760;
+    
+   }
+
+/*------- header---------- */
+/*------- message---------- */
+#message{
+     background-color: #355760;
+     height:765px;
+     position: relative;
+     background-image: url(../images/lig.png);
+     background-repeat: no-repeat;
+     background-position: right bottom;
+ }
+ #message h1{
+  font-size:70px;
+  color:#E5AA73;
+  position:absolute;
+  z-index: 10;
+  top:30px;
+  left:50px;
+  font-weight: bold;
+ }
+ #message h3{
+  font-weight: bold;
+  writing-mode: vertical-rl;
+ }
+ .circle2{ position:absolute;
+    z-index: 0;
+    left:-100px;
+    bottom:-100px;
+    display:block;
+    width:550px;
+    height:550px;
+    border-radius: 50%;
+    border:3px solid white;}
+    .line1{
+        position: absolute;
+        top:382px;
+        left:-350px;
+        width: 765px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        transform: rotate(90deg);
+    }
+    .line2{
+      position: absolute;
+       top:700px; 
+      width: 100vw;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+      
+    }
+    .flex3{
+      display: flex;
+      position:absolute;
+      right:10vw;
+      top:20vh;
+      color:white;
+      letter-spacing: 0.5em;
+      align-items: center;
+gap:100px;
+      justify-content: space-around;
+     
+    }
+    .m2 p{
+      font-size: 18px;
+      margin-bottom:40px;
+      line-height: 1.5;
+      
+    }
+    .m1{
+     
+      line-height: 2;
+      font-size:21px;
+      
+    }
+/*------- message---------- */
+/*-------company---------- */
+#company{
+  height:2000px;
+  background-color: #EFE9DC;
+background-image: url(../images/back.png); 
+background-repeat: no-repeat;
+background-position: center;
+  position: relative;
+}
+#company h1{
+  font-size:77px;
+  color:#E5AA73;
+  position:absolute;
+  z-index: 10;
+  left:50px;
+  top:30px;
+  font-weight: bold;
+}
+.line3{
+  position: absolute;
+  top: 380px;
+  right: -350px;
+  width: 765px;
+  height: 0px;
+  border: 2px solid #355760;
+  transform: rotate(90deg);
+}
+.line4{
+position: absolute;
+top:105px;
+width: 100vw;
+  height: 0px;
+  border: 2px solid #355760;}
+  .line5{
+    position: absolute;
+    bottom: 380px;
+   left: -350px;
+    width: 765px;
+    height: 0px;
+    border: 2px solid #355760;
+    transform: rotate(90deg);
+  }
+  .line6{
+  position: absolute;
+  bottom:50px;
+  width: 100vw;
+    height: 0px;
+    border: 2px solid #355760;}
+    .flex4{
+     margin:0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     gap: 200px;
+      padding-top: 220px;
+     
+    }
+    .co1{
+      display:flex;
+      width:75vw;
+      column-gap: 70px;
+      float:right;
+      align-items: center;
+      
+    }
+    
+    .co1w{
+      padding-top: 50px;
+      width:435px;
+      color: #355760;
+    }
+    .co1w h2{
+      font-weight: bold;
+      font-size:30px;
+      background: linear-gradient(transparent 60%, white 60%);
+      width:230px;
+    }
+    .co1w p{
+      line-height:2 ;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .co2{
+      display:flex;
+      width:75vw;
+      column-gap: 70px;
+      align-items: center;
+      
+    }
+    .co2w{
+      padding-top: 50px;
+      width:435px;
+      color: #355760;
+    }
+    .co2w h2{
+      font-weight: bold;
+      font-size:30px;
+      background: linear-gradient(transparent 60%, white 60%);
+      width:210px;
+    }
+    .co2w p{
+      line-height:2 ;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .co3{
+      display:flex;
+      width:75vw;
+      column-gap: 70px;
+      float:right;
+      align-items: center;
+    }
+    .co3w{
+      padding-top: 50px;
+      width:435px;
+      color: #355760;
+    }
+    .co3w h2{
+      font-weight: bold;
+      font-size:30px;
+      background: linear-gradient(transparent 60%, white 60%);
+      width:350px;
+    }
+    .co3w p{
+      line-height:2 ;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+.button006 a {
+  float:right;
+  background: transparent;
+  border:#355760 1px solid;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  max-width: 240px;
+  padding: 10px 30px;
+  color: #355760;
+  transition: 0.3s ease-in-out;
+  font-family: "Athelas";
+  font-size: 16px;
+}
+.button006 a:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: -2em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 12px;
+  height: 1px;
+  background-color: #355760;
+  transition: 0.3s;
+}
+.button006 a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -2em;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 1px;
+  background-color:#355760;
+  transition: 0.3s;
+}
+.button006 a:hover:before, .button006 a:hover:after {
+  right: -2.5em;
+}
+.button006 a:hover {
+  background: #a2a7a7;
+  color:#eee;
+}
+/*-------company---------- */
+/*-------member---------- */
+#member{
+  background-color: #355760;
+  height:900px;
+  background-image: url(../images/mback.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: relative;
+}
+#member h1{
+  font-size:70px;
+  color:#E5AA73;
+  position:absolute;
+  z-index: 10;
+  left:50px;
+  top:30px;
+  font-weight: bold;
+ }
+ .member{
+  padding-top: 180px;
+padding-left:100px;
+ }
+.member ul{
+  color:white;
+  font-size: 28px;
+  line-height: 3.5;
+ 
+  list-style: none;
+ 
+ }
+ .member a{
+  
+  text-decoration: none;
+ }
+
+ .member a:hover {
+  font-weight: 900;
+}
+  .member a:before{
+    content: "";
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    display: inline-block;
+    pointer-events: none;
+    width: 720px;
+    height: 720px;
+  }
+  .member1 img{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .member1:hover img{
+    opacity: 1;
+  }
+  .member2 img{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .member2:hover img{
+    opacity: 1;
+  }
+  .member3 img{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .member3:hover img{
+    opacity: 1;
+  }
+  .member4 img{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .member4:hover img{
+    opacity: 1;
+  }
+  .member5 img{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .member5:hover img{
+    opacity: 1;
+  }
+  .member6 img{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .member6:hover img{
+    opacity: 1;
+  }
+   /*.member a:hover:before{
+    background: url(../images/Group\ 21.png); /* 表示する画像 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top; */
+  
+/*-------member---------- */
+/*-------job---------- */
+#job{
+  overflow: hidden;
+  position:relative;
+  /* height:2220px; */
+  background-color: #EFE9DC;
+  background-image:url(../images/lig.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+#job h1{
+  font-size:70px;
+  color:#E5AA73;
+ 
+  padding-left:50px;
+  padding-top:30px;
+  font-weight: bold;
+}
+.line7{
+  position: absolute;
+  top: 900px;
+  right: -800px;
+  width: 1800px;
+  height: 0px;
+  border: 2px solid #355760;
+  transform: rotate(90deg);}
+  .circle7{
+    position:absolute;
+    z-index: 0;
+    right:-200px;
+   top:60px;
+    display:block;
+    width:1020px;
+    height:1020px;
+    border-radius: 50%;
+    border:3px solid #355760;
+  }
+  .new{
+    position:absolute;
+    z-index: 0;
+    right:0px;
+   top:250px;
+    display:block;
+    background-color: #355760;
+    width:1200px;
+    height:370px;
+    
+  }
+  .new1{
+    position:absolute;
+    z-index: 1;
+    right:400px;
+   top:90px;
+    display:block;
+    background-color: white;
+    width:530px;
+    height:195px;
+  }
+  .new h2{
+    padding-top: 46px;
+    padding-left:77px;
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 0.8rem;
+  }
+  .new p{
+    font-size: 18px;
+    color:black;
+    text-align: center;
+    font-weight: normal;
+    line-height: 2;
+    padding-top: 60px;
+  }
+  /*アコーディオン全体*/
+.accordion-area{
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin-top: 700px;
+background-color: #355760;
+padding-top: 100px;
+padding-bottom: 100px;
+padding-right: 200px;
+padding-left: 50px;
+position: relative;
+ 
+}
+.accordion-area h2{
+  float:right;
+  writing-mode: vertical-rl;
+  position:absolute;
+  top:46px;
+  right:77px;
+  font-size: 30px;
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  color:white;
+  letter-spacing: 0.8rem;
+}
+
+
+.accordion-area li{
+  margin: 30px 0;
+}
+
+.accordion-area section {
+border-bottom: 1px solid #ccc;
+}
+
+/*アコーディオンタイトル*/
+.title {
+  position: relative;/*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size:1rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 50px;
+  transition: all .5s ease;
+  color:white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+  position: absolute;
+  content:'';
+  width: 15px;
+  height: 2px;
+  background-color: #ccc;
+  
+}
+.title::before{
+  top:48%;
+  left: 15px;
+  transform: rotate(0deg);
+  
+}
+.title::after{    
+  top:48%;
+  left: 15px;
+  transform: rotate(90deg);
+
+}
+
+/*　closeというクラスがついたら形状変化　*/
+
+.title.close::before{
+transform: rotate(45deg);
+}
+
+.title.close::after{
+transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;/*はじめは非表示*/
+  background: #f3f3f3;
+margin:0 3% 3% 3%;
+  padding: 3%;
+  color:black;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.box p{
+  padding:10px;
+}
+.box h5{
+  color:black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.j1{
+  justify-content: center;
+  display:flex;}
+ 
+.j2, .j3, .j4{
+text-align: center;
+  margin: 30px 50px;
+  padding:70px;
+  box-shadow: 3px 3px #a2a7a7;
+  background-color: #E5AA73;
+  color:white;
+}
+.j2:hover, .j3:hover, .j4:hover{box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);}
+.j0 p{
+  line-height: 1.5;
+  margin-top:150px;
+  text-align: center;
+  font-size: 28px;
+  color:#355760;
+}
+.button0010 a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 80px ;
+  max-width: 1000px;
+  color: #355760;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+font-size: 120px;
+}
+.button0010 a:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: -0.5em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 20px;
+  height: 5px;
+  background-color: #355760;
+  transition: 0.3s;
+}
+.button0010 a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -0.5em;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: #355760;
+  transition: 0.3s;
+}
+.button0010 a:hover:before, .button0010 a:hover:after {
+  right: -1em;
+}
+.button0010 a:hover {
+ 
+  color: #E5AA73;
+}
+
+/*-------job---------- */
+/*-------footer---------- */
+#footer{
+  background-image: url(../images/LIFE\ IS\ GOOD.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #355760;
+  height:360px;
+}
+.office{
+  position: absolute;
+  bottom:20px;
+right:600px;
+  
+  color:white;
+  font-size: 20px;
+  line-height: 2;
+  list-style: square inside;; 
+}
+.office h1{
+  font-weight: bold;
+  margin-top:15px;
+}
+.flex7{
+ position: absolute;
+  color:white;
+  font-size: 16px;
+  line-height: 2;
+  bottom:20px;
+  left:50px;
+list-style: square inside;;
+}
+.flex7 h1{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top:15px;
+}
+.flex8{
+  position: absolute;
+  color:white;
+  font-size: 16px;
+  line-height: 2;
+  bottom:20px; 
+right:100px;
+}
+.flex8 h1{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:15px;
+}
+/*-------footer---------- */
