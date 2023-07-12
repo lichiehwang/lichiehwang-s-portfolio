@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW ">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Site</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
   <div id="wrapper">
     <div id="header">
+      <div id="btn">
+      <a href="./index.html" class="btn">中文</a>
+      <a href="./index2.html" class="btn">English</a>
+      <a href="./index3.html" class="btn">日本語</a>
+    </div>
       <div class="profile">
         <h2>Hello!</h2>
         <div class="content">
@@ -20,12 +27,14 @@
       </div>
       <div class="circle1"></div>
       <div class="word">
-        <p>我熱愛網頁設計，對UI/UX設計和前端開發有深入的理解。擅長使用<br>
-          Photoshop, Illustrator, XD, Figma等設計軟體，以及熟悉HTML、<br>
-          CSS和JavaScript等程式語言，並且了解RWD 響應式網頁設計。</p>
-        <p>我有豐富的設計經驗，可以設計並完成多個網站，包括設計圖形、排版、<br>
-          架構、內容和功能。此外，我是一名語言達人，能夠流利地使用中文、<br>
-          英文和日文進行溝通和網站設計。</p>
+        <h4>About me</h4>
+        <p>我熱愛網頁設計，對UI/UX設計和前端開發有深入的理解。擅長使用
+          Photoshop, Illustrator, XD, Figma等設計軟體，以及熟悉HTML、
+          CSS等程式語言，並且了解JavaScript和RWD 響應式網頁設計。</p>
+          <br>
+        <p>我有豐富的設計經驗，可以設計並完成多個網站，包括設計圖形、
+          排版、架構、內容和功能。此外，我是一名語言達人，能夠流利地
+          使用中文、英文和日文進行溝通和網站設計。</p>
       </div>
     </div>
 
@@ -39,7 +48,9 @@
           <section>
             <h3 class="title">Date of Birth</h3>
             <div class="box">
-              <p>1995/12/16</p>
+              <p><img src="./img/birth.svg" alt="" width="16px">&nbsp;&nbsp;<b>1995/12/16</b></p> 
+              <p>邁入20後半，持續在學習的路途中</p>
+                
             </div>
           </section>
         </li>
@@ -47,8 +58,9 @@
           <section>
             <h3 class="title">Education</h3>
             <div class="box">
-              <p><b>國立清華大學</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外國語文學系<br>
-                <b>神戶電子專門學校</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;網頁設計科</p>
+             <p> <img src="./img/taiwan.svg" alt=""width="16px"><b>&nbsp;&nbsp;2015-2019&nbsp;&nbsp;&nbsp;&nbsp;國立清華大學&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外國語文學系</b><br>
+                <img src="./img/japan.svg" alt="" width="16px"><b>&nbsp;&nbsp;2022-2024&nbsp;&nbsp;&nbsp;&nbsp;神戶電子專門學校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;網頁設計學科</b></p>
+                <p>結合語言與技術，擅長前端開發和設計美學 </p>
             </div>
           </section>
         </li>
@@ -56,7 +68,9 @@
           <section>
             <h3 class="title">Language</h3>
             <div class="box">
-              <p><b>英文</b>（Toeic 985）<br><b>日文</b>（JLPT N1）</p>
+              <p><img src="./img/english.svg" alt=""width="16px">&nbsp;&nbsp;<b>英文</b>（Toeic 985）<br><b><img src="./img/janpanese.svg" width="16px"alt="">&nbsp;&nbsp;日文</b>（JLPT N1）</p>
+            
+              <p>具備優秀的語言能力和深厚的學習經驗，致力於拓展國際交流和跨文化溝通</p>
             </div>
           </section>
         </li>
@@ -64,9 +78,14 @@
           <section>
             <h3 class="title">Skill</h3>
             <div class="box">
-              <p><b>DESIGN</b>&nbsp;:&nbsp;&nbsp;photoshop, illustrator, figma, XD<br>
-                <b>CODE</b>&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;html, css, javascript<br>
-                <b>VIDEO</b>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;final cut pro</p>
+                <img src="./img/ps.svg" alt="" width="50px">
+                <img src="./img/ai.svg" alt="" width="50px"> 
+                <img src="./img/xd.svg" alt="" width="50px"> 
+                <img src="./img/figma.png" alt="" width="50px">
+                <img src="./img/cut.png" alt="" width="50px"> 
+                <img src="./img/html.svg" alt="" width="50px"> 
+                <img src="./img/css.svg" alt="" width="50px">
+               
             </div>
           </section>
         </li>
@@ -74,7 +93,17 @@
           <section>
             <h3 class="title">Work experience</h3>
             <div class="box">
-              <p><b>2021/05-2022/03</b>&nbsp;&nbsp;&nbsp;國立清華大學化學工程學系何榮銘教授實驗室&nbsp;&nbsp;&nbsp;行政助理</p>
+              <p><img src="./img/work.svg" alt="" width="16px">&nbsp;&nbsp;<b>2021/05-2022/03&nbsp;&nbsp;&nbsp;國立清華大學化學工程學系何榮銘教授實驗室&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行政助理</b></p>
+              <p>負責帳務管理、人員行政、活動策畫和外籍學生輔助等工作。<br>
+                在這段經驗中，我學到了如何有效地組織工作，並且培養了我的解決問題能力。</p>
+          <br>
+              <p><img src="./img/teacher.svg" alt="" width="16px">&nbsp;&nbsp;<b>2015/09-2021/02&nbsp;&nbsp;&nbsp;英語教育機構&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英文老師</b></p>
+              <p>在學期間，曾於英語教育機構擔任英文老師，負責學生管理與課程規劃。<br>
+                這段經歷使我更加熟悉教學流程，同時也提升了我的人際溝通和時間管理能力。</p>
+                <br>
+                <p><img src="./img/suhi.svg" alt="" width="16px">&nbsp;&nbsp;<b>2022/05-2023/02&nbsp;&nbsp;&nbsp;日本壽司店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外場人員</b></p>
+                <p>赴日留學期間，於壽司店擔任外場，負責點餐、結帳和清潔工作。<br>
+                  在這份工作中，我學習到如何為顧客提供良好的用餐體驗，並且進一步提高了我的服務技巧和總體工作能力。</p>
             </div>
           </section>
         </li>
@@ -82,7 +111,10 @@
           <section>
             <h3 class="title">Hobby</h3>
             <div class="box">
-              <p>影像製作、繪圖設計</p>
+              <p><img src="./img/video.svg" alt=""width="16px">&nbsp;&nbsp;<b>影片製作<br><img src="./img/compu.svg" alt=""width="16px">&nbsp;&nbsp;網頁設計</b></p>
+              <p>閒暇的時間裡，除了不斷提升自己的網頁設計能力，我還喜歡進行影片剪輯的工作，並將其上傳到社群網站。<br>
+               在網絡普及的時代，能夠運用自媒體行銷也是一項重要的技能。</p>
+              
             </div>
           </section>
         </li>
@@ -93,32 +125,33 @@
       <ul class="tab">
         <li><a href="#work">Web design</a></li>
         <li><a href="#graphic"><font color="#f196a7">Graphic design</font></a></li>
+        <li><a href="#video">Video</a></li>
       </ul>
       <div id="work" class="area">
         <h1>Web design</h1>
         <div class="web-container">
           <div class="web">
-            <img src="./img/selfsite.png" alt="Image 1">
+           <a href="./2G02005_王俐絜＿自己紹介サイト/html/index.html" target="_blank"> <img src="./img/selfsite.png" alt="Image 1"></a>
             <h3>profile site</h3>
           </div>
           <div class="web">
-            <img src="./img/yusite.png" alt="Image 2">
+           <a href="./img/yu2.png"target="_blank"> <img src="./img/yusite.png" alt="Image 2"></a>
             <h3>youtuber site</h3>
           </div>
           <div class="web">
-            <img src="./img/elemsite.png" alt="Image 3">
+            <a href="./img/elem2.png"target="_blank">  <img src="./img/elemsite.png" alt="Image 3"></a>
             <h3>school site</h3>
           </div>
           <div class="web">
-            <img src="./img/masite.png" alt="Image 4">
+           <a href="./mascot/index.html" target="_blank"><img src="./img/masite.png" alt="Image 4"></a> 
             <h3>mascot site</h3>
           </div>
           <div class="web">
-            <img src="./img/resite.png" alt="Image 5">
+          <a href="./recruit/index.html" target="_blank"> <img src="./img/resite.png" alt="Image 5"></a> 
             <h3>recruit site</h3>
           </div>
           <div class="web">
-            <img src="./img/flowersite.png" alt="Image 6">
+            <a href="./進級制作/index.html" target="_blank">  <img src="./img/flowersite.png" alt="Image 6"></a> 
             <h3>flowershop site</h3>
           </div>
         </div>
@@ -127,20 +160,456 @@
       <div id="graphic" class="area">
         <h1>Graphic design</h1>
         <div class="graflex">
-          <img src="./img/g1.png" alt="">
-          <img src="./img/g2.png" alt="">
-          <img src="./img/g3.png" alt="">
-          <img src="./img/g4.png" alt="">
-          <img src="./img/g5.png" alt="">
-          <img src="./img/g6.png" alt="">
-          <img src="./img/g7.png" alt="">
-          <img src="./img/g8.png" alt="">
-          <img src="./img/g9.png" alt="">
+          <div class="pu-box">
+            <label for="pu-on">
+              <div class="btn-open">
+                <img src="./img/g1.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on">
+            <div class="pu">
+              <label for="pu-on" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>新竹城隍廟美食小冊子</h6>
+                <div class="puflex">
+              <img src="./img/g1.png"  alt="" class="layer-img">
+              <p>藍白交織，映襯出清新宜人的氛圍。<br>
+              
+                透過色彩繽紛的插圖，探索這座城市的美味角落！</p>
+              <img src="./img/g12.png" alt="">
+            <img src="./img/g13.png" alt="">
+            </div>
+           
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on2">
+              <div class="btn-open">
+                <img src="./img/g2.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on2">
+            <div class="pu">
+              <label for="pu-on2" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>2025啤酒博覽會logo</h6>
+                <div class="puflex">
+                <img src="./img/g2.png"  alt="" class="layer-img">
+                <p>透過乾杯與泡沫的元素配上鮮明藍黃色彩，製造出啤酒帶來的歡愉氣氛。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on3">
+              <div class="btn-open">
+                <img src="./img/g3.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on3">
+            <div class="pu">
+              <label for="pu-on3" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+              <h6>名片設計</h6>
+              <div class="puflex">
+              <img src="./img/g3.png"  alt="" class="layer-img">
+              <p>側臉剪影搭配圓滑線條與繽紛配色。</p>
+            </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on4">
+              <div class="btn-open">
+                <img src="./img/g4.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on4">
+            <div class="pu">
+              <label for="pu-on4" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>振興農村計畫</h6>
+                <div class="puflex">
+                <img src="./img/g41.png"  alt="" class="layer-img">
+                <p>logo配色使用大地色系，字型設計中加入森林與茅草屋的意象，以此凸顯農村的特點。</p>
+                <img src="./img/g42.png"  alt="" class="layer-img">
+                <p>邀請函以電車窗景設計，夕陽的都市街景配上「在都市感到疲憊嗎？」的文字，藉以吸引因都市生活感到疲乏的受眾。</p>
+                <img src="./img/g43.png"  alt="" class="layer-img">
+                <p>邀請函拉開後，便可以看到與都市截然不同的田園景色，配上近郊的特點加以宣傳。</p>
+                <img src="./img/g44.png"  alt="" class="layer-img">
+                <p>邀請函背面解說農村體驗內容，並記載注意事項。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on5">
+              <div class="btn-open">
+                <img src="./img/g5.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on5">
+            <div class="pu">
+              <label for="pu-on5" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>老婆婆警告貼紙</h6>
+                <div class="puflex">
+                <img src="./img/g5.png"  alt="" class="layer-img">
+                <p>以可愛插圖與鮮明配色凸顯警告標語，以較為童趣的方式達到提醒功效。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on6">
+              <div class="btn-open">
+                <img src="./img/g6.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on6">
+            <div class="pu">
+              <label for="pu-on6" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>小狗警告貼紙</h6>
+                <div class="puflex">
+                <img src="./img/g6.png"  alt="" class="layer-img">
+                <p>以可愛插圖與鮮明配色凸顯警告標語，以較為童趣的方式達到提醒功效。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on7">
+              <div class="btn-open">
+                <img src="./img/g7.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on7">
+            <div class="pu">
+              <label for="pu-on7" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>商家標語設計</h6>
+                <div class="puflex">
+                <img src="./img/g7.png"  alt="" class="layer-img">
+                <p>以活潑的色彩與呈現方式設計商家常用的標語。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on8">
+              <div class="btn-open">
+                <img src="./img/g8.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on8">
+            <div class="pu">
+              <label for="pu-on8" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>星座圖</h6>
+                <div class="puflex">
+                <img src="./img/g8.png"  alt="" class="layer-img">
+                <p>以溫柔的大地色系設計星座的象徵圖案。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on9">
+              <div class="btn-open">
+                <img src="./img/g9.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on9">
+            <div class="pu">
+              <label for="pu-on9" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>蜂蜜logo設計</h6>
+                <div class="puflex">
+                <img src="./img/g91.png"  alt="" class="layer-img">
+                <p>以神戶港灣發想，以線條感蜜蜂加上海浪元素來製作神戶產的蜂蜜logo。</p>
+                <img src="./img/g9.png" alt="">
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on10">
+              <div class="btn-open">
+                <img src="./img/p1.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on10">
+            <div class="pu">
+              <label for="pu-on10" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>美術展海報</h6>
+                <div class="puflex">
+                <img src="./img/p1.png"  alt="" class="layer-img">
+                <p>主題為「藝術與人文」，以宣傳為目的，加入展覽畫作的美術展海報設計。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on11">
+              <div class="btn-open">
+                <img src="./img/p2.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on11">
+            <div class="pu">
+              <label for="pu-on11" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>美術展海報</h6>
+                <div class="puflex">
+                <img src="./img/p2.png"  alt="" class="layer-img">
+                <p>主題為「藝術與人文」，以宣傳為目的，加入展覽畫作的美術展海報設計。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on12">
+              <div class="btn-open">
+                <img src="./img/p3.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on12">
+            <div class="pu">
+              <label for="pu-on12" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>美術展海報</h6>
+                <div class="puflex">
+                <img src="./img/p3.png"  alt="" class="layer-img">
+                <p>主題為「藝術與人文」，以宣傳為目的，加入展覽畫作的美術展海報設計。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on13">
+              <div class="btn-open">
+                <img src="./img/p4.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on13">
+            <div class="pu">
+              <label for="pu-on13" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>美術展海報</h6>
+                <div class="puflex">
+                <img src="./img/p4.png"  alt="" class="layer-img">
+                <p>主題為「藝術與人文」，以宣傳為目的，加入展覽畫作的美術展海報設計。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on14">
+              <div class="btn-open">
+                <img src="./img/p5.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on14">
+            <div class="pu">
+              <label for="pu-on14" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>美術展海報</h6>
+                <div class="puflex">
+                <img src="./img/p5.png"  alt="" class="layer-img">
+                <p>主題為「藝術與人文」，以宣傳為目的，加入展覽畫作的美術展海報設計。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on15">
+              <div class="btn-open">
+                <img src="./img/p6.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on15">
+            <div class="pu">
+              <label for="pu-on15" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>數字設計</h6>
+                <div class="puflex">
+                <img src="./img/p6.png"  alt="" class="layer-img">
+                <p>以電影「布達佩斯大飯店」中的色彩為靈感發想的數字設計作品。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on16">
+              <div class="btn-open">
+                <img src="./img/p7.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on16">
+            <div class="pu">
+              <label for="pu-on16" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>長條圖設計</h6>
+                <div class="puflex">
+                <img src="./img/p7.png"  alt="" class="layer-img">
+                <p>以頭髮長度為比較標準所設計的長條圖。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on17">
+              <div class="btn-open">
+                <img src="./img/p8.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on17">
+            <div class="pu">
+              <label for="pu-on17" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>商業用語設計</h6>
+                <div class="puflex">
+                <img src="./img/p8.png"  alt="" class="layer-img">
+                <p>商業中使用的「PDCA循環」與「AISAS模式」，以圖像方式呈現。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on18">
+              <div class="btn-open">
+                <img src="./img/p9.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on18">
+            <div class="pu">
+              <label for="pu-on18" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>夏季明信片</h6>
+                <div class="puflex">
+                <img src="./img/p9.png"  alt="" class="layer-img">
+                <p>以清爽的藍黃白配色加上泡泡的元素來呈現夏天感。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on19">
+              <div class="btn-open">
+                <img src="./img/z1.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on19">
+            <div class="pu">
+              <label for="pu-on19" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>夏季明信片</h6>
+                <div class="puflex">
+                <img src="./img/z1.png"  alt="" class="layer-img">
+                <p>以清爽的藍黃白配色來呈現夏天感。</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+          <div class="pu-box">
+            <label for="pu-on20">
+              <div class="btn-open">
+                <img src="./img/z2.png"  alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on20">
+            <div class="pu">
+              <label for="pu-on20" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+                <h6>校園招生海報</h6>
+                <div class="puflex">
+                <img src="./img/z2.png"  alt="" class="layer-img">
+                <p>為方便馬上獲得資訊，以粗體字與重點標記所製作的宣傳海報</p>
+              </div>
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+        
         </div>
+     
       </div>
+      <div id="video" class="area">
+        <h1>Video</h1>
+        <div class="slide-wrapper">
+          <div class="slide">
+            
+            <div class="slide-item"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KI_OoCvI2Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="slide-item"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7EailLmxWQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="slide-item"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sbpHOJQ15OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+          </div>
+        </div>
     </div>
   </div>
-
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript">
+    $('.slide').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      dots: true,
+      accessibility: true,
+      arrows: true,
+      swipe: true,
+      swipeToSlide: true
+    });
+  
+    $('.slide').bind('touchstart', function() {
+      return true;
+    });
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
 </body>
