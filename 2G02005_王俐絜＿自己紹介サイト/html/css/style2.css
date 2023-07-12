@@ -1,0 +1,91 @@
+body {
+    background-image: url(../img2/background.png);
+}
+
+h1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    margin: 50px auto;
+    text-align: center;
+    width: 400px;
+    border-radius: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+
+a:hover {
+    opacity: 0.7;
+    color: pink;
+}
+
+.slider {
+    width: 94%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 50px;
+}
+
+.slider img {
+    width: auto;
+    height: 500px;
+}
+
+.slider .slick-slide {
+    transform: scale(0.8);
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+
+.slider .slick-slide.slick-center {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+.slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background: #5db8e8;
+}
+
+.slick-dots .slick-active button {
+    background: pink;
+}

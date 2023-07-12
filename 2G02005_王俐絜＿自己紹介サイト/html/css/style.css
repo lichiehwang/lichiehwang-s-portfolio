@@ -1,0 +1,292 @@
+html {
+    font-size: 10px;
+    background: #c8e0f0 url(../img/back.png);
+  }
+  
+  #wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #header {
+    padding-top: 50px;
+    background: white;
+    position: relative;
+    width: 1200px;
+    padding-bottom: 65px;
+   
+  }
+  
+  #topphoto {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+  
+  #top {
+    padding-left: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 3.5;
+    font-family: "Krungthep";
+    text-decoration: underline #5db8e8;
+    text-decoration-skip-ink: none;
+    color: #5db8e8;
+    text-underline-offset: 10px;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    color: pink;
+  }
+  
+ #flex{
+    display:flex;
+  flex-wrap: nowrap;
+  gap:30px;
+  margin-left: 50px;
+ padding-top: 80px;
+ }
+ 
+  
+  #about {
+    background: #f196a7;
+    width: 1200px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  #aboutdesign {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  
+  #bq {
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+  }
+  
+  /*アコーディオン全体*/
+  .accordion-area {
+    list-style: none;
+    width: 96%;
+    max-width: 900px;
+    margin: 0px auto;
+    padding-bottom: 180px;
+    padding-top: 50px;
+  }
+  
+  .accordion-area li {
+    margin: 10px 0;
+  }
+  
+  .accordion-area section {
+    border-bottom: 1.5px solid white;
+  }
+  
+  /*アコーディオンタイトル*/
+  .title {
+    position: relative; /*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding: 3% 3% 3% 50px;
+    transition: all 0.5s ease;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /*アイコンの＋と×*/
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .title::before {
+    top: 48%;
+    left: 15px;
+    transform: rotate(0deg);
+  }
+  
+  .title::after {
+    top: 48%;
+    left: 15px;
+    transform: rotate(90deg);
+  }
+  
+  /*　closeというクラスがついたら形状変化　*/
+  .title.close::before {
+    transform: rotate(45deg);
+  }
+  
+  .title.close::after {
+    transform: rotate(-45deg);
+  }
+  
+  /*アコーディオンで現れるエリア*/
+  .box {
+    display: none; /*はじめは非表示*/
+    background: white;
+    margin: 0 3% 3% 3%;
+    padding: 3%;
+    color: #5db8e8;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  #q1 {
+    position: absolute;
+    top: 325px;
+    right: 250px;
+  }
+  
+  #instagram {
+    margin-top: -65px;
+    margin-bottom: -70px;
+    background: url(../img/ig\ page.png) no-repeat;
+    width: 1200px;
+    height: 1060px;
+    z-index: 20;
+    position: relative;
+  }
+  
+  #igdesign {
+    position: absolute;
+    top: 50px;
+    left: 423px;
+  }
+  
+  #igphoto {
+  margin-top:-250px;
+   text-align: center;
+  }
+  
+
+  #igname {
+ text-align: center;
+  padding:270px;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Apple Symbols';
+    
+    color: #f196a7;
+  }
+  
+  #graphic {
+    background: url(../img/graphic.png) no-repeat;
+    width: 1200px;
+    height: 1260px;
+    z-index: 10;
+    position: relative;
+  }
+  
+  #graphicdesign {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+  }
+  
+  #work1 {
+    position: absolute;
+    top: 250px;
+    left: 80px;
+  }
+  
+  #work2 {
+    position: absolute;
+    top: 300px;
+    left: 750px;
+  }
+  
+  #work3 {
+    position: absolute;
+    top: 250px;
+    left: 580px;
+  }
+  
+  #work4 {
+    position: absolute;
+    top: 750px;
+    left: 55px;
+  }
+  
+  #work5 {
+    position: absolute;
+    top: 720px;
+    left: 600px;
+  }
+  
+  #view1 {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+  }
+  
+  #web {
+    background: url(../img/web.png) no-repeat;
+    width: 1200px;
+    height: 1360px;
+    position: relative;
+  }
+  
+  #webdesign {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+  }
+  
+  #cindy {
+    position: absolute;
+    top: 170px;
+    left: 250px;
+  }
+  
+  #farm {
+    position: absolute;
+    top: 170px;
+    right: 50px;
+  }
+  
+  #view2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+  }
+  
+  #footer {
+    background: url(../img/bottom.png);
+    width: 1200px;
+    height: 225px;
+    position: relative;
+  }
+  
+  #footertext {
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Krungthep";
+    word-spacing: 1.5;
+    line-height: 2.2;
+    top: 22px;
+    left: 50px;
+    text-decoration: underline white;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 2px;
+    font-weight: normal;
+  }
+  
+  #flex2{
+    display: flex;
+    flex-wrap: nowrap;
+    position:absolute;
+    bottom:30px;
+    right:50px;
+    gap:20px;
+
+  }
