@@ -43,9 +43,11 @@ html {
 
 .word {
    display:inline-block;
- padding-top: 500px;
+  
+  padding-top: 500px;
  padding-left: 250px;
- width:40%;
+ 
+  width:40%;
 }
 .word p{
   color: white;
