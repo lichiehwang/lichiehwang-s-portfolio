@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  background-color: #f0cbcc;
+  font-family: "Avenir";
+}
+
+/* Header */
+#header {
+  background-color: #f0cbcc;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle1 {
+  width: 1000px;
+  height: 1000px;
+  background-color: #1d2b70;
+  border-radius: 50%;
+  position: absolute;
+  top: -400px;
+  right: -200px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.word {
+  display:inline-block;
+  
+  padding-top: 500px;
+ padding-left: 250px;
+ 
+  width:40%;
+}
+.word p{
+  color: white;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+.word h4{
+  font-size: 30px;
+  color:white;
+  padding-bottom:20px;
+  letter-spacing: 2px;
+}
+.profile {
+  max-width:40%;
+  margin-top: 30px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.profile h2 {
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 20px;
+  color: white;
+}
+
+.profile h3 {
+  letter-spacing: 3px;
+  writing-mode: vertical-lr;
+  font-size: 25px;
+  color: white;
+  opacity: 0.8;
+}
+
+.profile h1 {
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 10px;
+  color: #1d2b70;
+  /* text-shadow: 4px 4px 6px #a29994; */
+  text-align: center;
+}
+
+/* About */
+#about {
+  position: relative;
+}
+
+.accordion-area {
+  max-width: 900px;
+  margin: 200px auto;
+  list-style: none;
+  width: 96%;
+}
+
+.accordion-area li {
+  margin: 35px 0;
+}
+
+.accordion-area section {
+  border-bottom: 2px solid white;
+}
+
+.title {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 1% 1% 1% 25px;
+  transition: all 0.5s ease;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 1px #a29994;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+.title::before {
+  top: 48%;
+  right: 15px;
+  transform: rotate(0deg);
+}
+
+.title::after {
+  top: 48%;
+  right: 15px;
+  transform: rotate(90deg);
+}
+
+.title.close::before {
+  transform: rotate(45deg);
+}
+
+.title.close::after {
+  transform: rotate(-45deg);
+}
+
+.box {
+  display: none;
+  background: #f3f3f3;
+  margin: 0 3% 3% 3%;
+  padding: 2%;
+  line-height: 1.7;
+  color: #1d2b70;
+  
+
+}
+
+.box p{
+  padding-top:10px;
+  font-size:15px;
+}
+
+/* Layout CSS */
+.circle2 {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: 80px;
+}
+
+.circle3 {
+  width: 40px;
+  height: 40px;
+  background-color: #1d2b70;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 130px;
+}
+
+.circle4 {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -60px;
+  right: 80px;
+}
+
+.circle5 {
+  width: 40px;
+  height: 40px;
+  background-color: #1d2b70;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  right: 130px;
+}
+#workgraphic{
+  /* max-width: 1200px; */
+  margin:0 100px;
+
+}
+/* Work */
+#work {
+  background-color: #1d2b70;
+  padding: 50px;
+  border: #ffffff 20px solid;
+}
+
+#work h1 {
+  color: white;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #a29994;
+  text-align: center;
+}
+
+.web-container {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.web {
+  width: 330px;
+  height: 250px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.web img {
+  max-width: 300px;
+  max-height: 180px;
+  object-fit: cover;
+  transition: box-shadow 0.3s;
+}
+
+.web:hover img,
+.web:focus img {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.web h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s;
+}
+
+.web:hover h3,
+.web:focus h3 {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Graphic */
+#graphic {
+  background-color: #f3f3f3;
+  border: #f196a7 20px solid;
+  padding: 50px;
+}
+
+#graphic h1 {
+  color: #f196a7;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #a29994;
+  text-align: center;
+}
+
+.graflex {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+
+/* workgraphic */
+/* video */
+#video {
+  background-color: #1d2b70;
+  padding: 50px;
+  border: #ffffff 20px solid;
+}
+
+#video h1 {
+  color: white;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #a29994;
+  text-align: center;
+}
+ /* 動画表示領域（表示サイズ）の設定 */
+.slide-wrapper {
+  width: 60%;
+  aspect-ratio: 16/9;
+  margin: 30px auto
+}
+.slide-item {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  padding-top: 60%;
+}
+
+.slide-item iframe {
+  position: absolute;
+  top:   0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 背景が白の場合に表示できるように黒文字としている */
+.slick-next:before {
+  content: '→';
+  color: black;
+}
+
+.slick-prev:before {
+  content: '←';
+  color: black;
+}
+/* video */
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+.tab li a{
+  font-size: 16px;
+  color:#1d2b70;
+  font-weight: bold;
+  text-decoration: none;
+	display: block;
+	background:#e9e6e6;
+	margin:0 2px;
+	padding:10px 20px;
+ 
+
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+	background:#fff;
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+/* CSS for screens less than 767px */
+@media screen and (max-width: 1310px) {
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4,
+  .circle5 {
+    display: none;
+  }
+  .profile{
+    margin:0 auto;
+    margin-top: 50px;
+  }
+  .word {
+    position: static;
+    margin:0 auto;
+    text-align: center;
+    display: block;
+    max-width:50%;
+    padding:30px;
+    border-radius: 10%;
+  }
+  .word h4{text-align: left;
+    text-shadow: 1px 1px 2px #a29994;}
+  .word p{
+    text-align: left;
+    display: inline-block;
+    text-shadow: 0.5px 0.5px 1px #a29994;
+  }
+  .accordion-area {
+    margin:70px 0;
+  }
+  .profile h1,
+  .profile h2{
+    position: static;
+    text-align: center;
+  }
+  .accordion-area{
+    margin:80px auto;
+  
+  }
+}
+
+#btn{
+  display:flex;
+  flex-direction: column;
+ gap: 10px;
+ position:absolute;
+ top:15px;
+ left:15px;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 12px;
+ text-align: center;
+ 
+}
+a.btn{
+  text-decoration: none;
+  list-style: none;
+}
+.btn{
+  color: #f196a7;
+  background-color: white;
+  border-bottom: 2px solid gainsboro;
+  padding:2.5px;
+  border-radius: 10%;
+}
+  
+a.btn:hover {
+  margin-top: 2px;
+  color: #fff;
+  background: #f196a7;
+  border-bottom: 1.5px solid gainsboro;
+}
+a.btn--shadow {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+/* ポップアップウインドウの設定 */
+.pu {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#pu-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#pu-on:checked + .pu{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+ .btn-open img{
+  max-width: 240px;
+ max-height: 170px;
+  margin: 50px;
+}
+.btn-open img:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+/* ポップアップの内容 */
+.pu-content{
+  margin: 40px auto 40px auto;
+  width: 90%;
+  z-index: 10;
+}
+.pu-content p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+.pu-content h6{
+  text-align: center;
+  font-size: 30px;
+padding-bottom:20px}
+
+.pu-content img{
+  max-width:60%;
+}
+
+#pu-on2, #pu-on3, #pu-on4, #pu-on5, #pu-on6, #pu-on7, #pu-on8, #pu-on9, #pu-on10, 
+#pu-on11, #pu-on12, #pu-on13, #pu-on14, #pu-on15,#pu-on16, #pu-on17,#pu-on18,#pu-on19,
+#pu-on20{
+  display: none;
+}
+
+#pu-on2:checked + .pu,
+#pu-on3:checked + .pu,
+#pu-on4:checked + .pu,
+#pu-on5:checked + .pu,
+#pu-on6:checked + .pu,
+#pu-on7:checked + .pu,
+#pu-on8:checked + .pu,
+#pu-on9:checked + .pu,
+#pu-on10:checked + .pu,
+#pu-on11:checked + .pu,
+#pu-on12:checked + .pu,
+#pu-on13:checked + .pu,
+#pu-on14:checked + .pu,
+#pu-on15:checked + .pu,
+#pu-on16:checked + .pu,
+#pu-on17:checked + .pu,
+#pu-on18:checked + .pu,
+#pu-on19:checked + .pu,
+#pu-on20:checked + .pu
+{ display: block;
+}
+.puflex{
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+  align-items: center;
+}
+.puflex p{
+  width:30%;
+}
+
+
