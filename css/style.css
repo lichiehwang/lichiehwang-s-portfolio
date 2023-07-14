@@ -42,12 +42,10 @@ html {
 }
 
 .word {
-  position: absolute;
-  
-  top: 120px;
-  right: 100px;
- 
-  width:35%;
+   display:inline-block;
+ padding-top: 500px;
+ padding-left: 250px;
+ width:40%;
 }
 .word p{
   color: white;
@@ -62,7 +60,7 @@ html {
   letter-spacing: 2px;
 }
 .profile {
-  width: 400px;
+   max-width:40%;
   margin-top: 30px;
   margin-left: 150px;
   display: flex;
