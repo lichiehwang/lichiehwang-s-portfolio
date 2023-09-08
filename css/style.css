@@ -526,7 +526,9 @@ padding-bottom:20px}
 #pu-on20,#pu-on21{
   display: none;
 }
-
+#pu-on21{
+  display: none;
+}
 #pu-on2:checked + .pu,
 #pu-on3:checked + .pu,
 #pu-on4:checked + .pu,
@@ -546,6 +548,9 @@ padding-bottom:20px}
 #pu-on18:checked + .pu,
 #pu-on19:checked + .pu,
 #pu-on20:checked + .pu,
+#pu-on21:checked + .pu
+{ display: block;
+}
 #pu-on21:checked + .pu
 { display: block;
 }
