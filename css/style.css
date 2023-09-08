@@ -246,7 +246,7 @@ html {
 .web {
   width: 300px;
   height: 250px;
-  margin: 10px;
+  margin: 30px;
   padding: 20px;
   text-align: center;
   color: white;
@@ -315,36 +315,18 @@ html {
   text-shadow: 2px 2px 4px #a29994;
   text-align: center;
 }
- /* 動画表示領域（表示サイズ）の設定 */
-.slide-wrapper {
-  width: 60%;
-  aspect-ratio: 16/9;
-  margin: 30px auto
-}
-.slide-item {
-  position: relative;
-  width: 60%;
-  height: 60%;
-  padding-top: 60%;
-}
-
-.slide-item iframe {
-  position: absolute;
-  top:   0;
-  right: 0;
+.video1 {
   width: 100%;
-  height: 100%;
+  position: relative;
+  padding-top: 56.25%;
 }
 
-/* 背景が白の場合に表示できるように黒文字としている */
-.slick-next:before {
-  content: '→';
-  color: black;
-}
-
-.slick-prev:before {
-  content: '←';
-  color: black;
+.video1 iframe {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
 }
 /* video */
 /*tabの形状*/
@@ -677,7 +659,50 @@ ul.drop-down-menu ul li:hover > ul {
   /* 第二層之後的選單展開位置*/
   left: 90%;
 }
-.ps{
-  display:flex;
-  align-items: center;
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn--raised {
+  color: #f196a7;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, .44), 1px 1px 1px #4a0a11;
+}
+.more{
+ position:absolute;
+ right:10%;
+ bottom:5%;
+
 }
