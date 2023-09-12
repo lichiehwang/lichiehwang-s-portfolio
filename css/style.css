@@ -328,16 +328,12 @@ border:solid 2px white;
 .video1 iframe {
  padding:15px;
   border:solid 5px white;
-
+  background:black;
   position: absolute;
   top: 10%;
   left: 15%;
   width: 70%;
-  height: 70%; position: absolute;
-  top: 10%;
-  left: 15%;
-  width: 70%;
-  height: 70%;
+  height: 70%; 
 }
 /* video */
 /*tabの形状*/
