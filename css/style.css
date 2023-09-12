@@ -328,7 +328,7 @@ border:solid 2px white;
 .video1 iframe {
  padding:15px;
   border:solid 5px white;
-  background:black;
+  background-color:black;
   position: absolute;
   top: 10%;
   left: 15%;
