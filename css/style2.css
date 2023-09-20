@@ -80,6 +80,9 @@ body {
   .home-link {
     text-align: center;
   }
+#js-page-top{
+    cursor: pointer;
+  }
   @media screen and (max-width: 767px) {
     body {
       font-size: 14px;
