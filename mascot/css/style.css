@@ -2,7 +2,7 @@
 html{
     font-size: 10px;
     font-family: sans-serif;
-    background-color: #8bbee9; 
+    background-color: #b8d8f3; 
 }
 
 #header{
@@ -199,6 +199,6 @@ html{
     top:100px;   
 }
 .wrapper{
-    max-width: 1500px;
+    max-width: 1440px;
 margin:0 auto;}
    
