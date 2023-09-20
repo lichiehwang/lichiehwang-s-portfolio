@@ -8,7 +8,10 @@ html {
   background-color: #f0cbcc;
   font-family: "Avenir";
 }
-
+#wrapper{
+  max-width: 1440px;
+  margin:0 auto;
+}
 /* Header */
 #header {
   background-color: #f0cbcc;
