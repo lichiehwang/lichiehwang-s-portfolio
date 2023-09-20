@@ -5,6 +5,7 @@
 html{
   overflow-x: hidden;
   font-family: "Avenir";
+    background-color: #ddd;
 }
 /*------- header---------- */
 #header{
@@ -119,6 +120,7 @@ html{
   }
   
 .flex1{
+    max-width: 1000px;
     z-index: 2;
     position:absolute;
     left:13vw;
@@ -214,8 +216,8 @@ html{
     .flex3{
       display: flex;
       position:absolute;
-      right:10vw;
-      top:20vh;
+      right:8vw;
+      top:8vh;
       color:white;
       letter-spacing: 0.5em;
       align-items: center;
@@ -299,6 +301,7 @@ width: 100vw;
       column-gap: 70px;
       float:right;
       align-items: center;
+        justify-content: center;
       
     }
     
@@ -323,6 +326,7 @@ width: 100vw;
       width:75vw;
       column-gap: 70px;
       align-items: center;
+        justify-content: center;
       
     }
     .co2w{
@@ -347,6 +351,7 @@ width: 100vw;
       column-gap: 70px;
       float:right;
       align-items: center;
+        justify-content: center;
     }
     .co3w{
       padding-top: 50px;
