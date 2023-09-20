@@ -4,10 +4,13 @@
    
 }
 html{
-    overflow-x: hidden;
+     overflow-x: hidden;
+    background-color: #ede8d8a3;
 }
 #wrapper{
     background-color: #e9e3d0;
+    max-width: 1440px;
+    margin:0 auto;
   } 
 #header{
    
