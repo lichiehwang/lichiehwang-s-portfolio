@@ -78,7 +78,9 @@ body {
   }
   
   .home-link {
-    text-align: center;
+    display:flex;
+    gap:100px;
+    justify-content: space-around;
   }
 #js-page-top{
     cursor: pointer;
