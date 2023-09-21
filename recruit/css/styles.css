@@ -7,6 +7,11 @@ html{
   font-family: "Avenir";
     background-color: #ddd;
 }
+#wrapper{
+  overflow-x: hidden;
+  max-width: 1440px;
+  margin:0 auto;
+}
 /*------- header---------- */
 #header{
     background-color: #EFE9DC;
@@ -217,7 +222,7 @@ html{
       display: flex;
       position:absolute;
       right:8vw;
-      top:8vh;
+      top:15vh;
       color:white;
       letter-spacing: 0.5em;
       align-items: center;
