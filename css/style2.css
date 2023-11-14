@@ -15,8 +15,7 @@ body {
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
-  border-style:none;
-  }
+}
   
   
   
@@ -50,26 +49,15 @@ body {
   }
   
   .article-body h3 {
-    position: relative;
     font-size: 18px;
     margin-bottom: 5px;
-    padding-left: 1em;
   }
   
   .article-body h3:not(:first-child) {
     margin-top: 50px;
   }
   
-  .article-body h3::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    content: "";
-    border-radius: 3px;
-    background-color: #333;
-  }
+
   
   .article-body p {
     font-size: 15px;
@@ -81,10 +69,62 @@ body {
     display:flex;
     gap:100px;
     justify-content: space-around;
+
   }
-#js-page-top{
+  #js-page-top{
     cursor: pointer;
   }
+ /* ポップアップウインドウの設定 */
+.pu {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40%;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#pu-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#pu-on:checked + .pu{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+ .btn-open img{
+  max-width: 100px;
+}
+.btn-open img:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+/* ポップアップの内容 */
+.pu-content{
+  text-align: center;
+  z-index: 30;
+}
+
+
+.pu-content img{
+  max-width:100%;
+}
+
   @media screen and (max-width: 767px) {
     body {
       font-size: 14px;
