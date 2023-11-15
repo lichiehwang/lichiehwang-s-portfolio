@@ -62,7 +62,7 @@ body {
   .article-body p {
     font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 30px;
+    
   }
   
   .home-link {
@@ -110,6 +110,8 @@ body {
 /* 開くボタン */
  .btn-open img{
   max-width: 100px;
+  margin-top: -500px;
+  margin-left: 20px;
 }
 .btn-open img:hover{
   box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
