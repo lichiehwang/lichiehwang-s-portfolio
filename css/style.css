@@ -391,7 +391,7 @@ margin:30px;
 
 
 /* CSS for screens less than 767px */
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1200px) {
   .circle1,
   .circle2,
   .circle3,
@@ -433,7 +433,33 @@ margin:30px;
   
   }
 }
-
+@media screen and (max-width: 600px) {
+  .profile{
+    margin:0 auto;
+    margin-top: 50px;
+    max-width: none;
+  }
+  .tab{
+    flex-direction: column;
+  }
+  #work{
+    padding:0;
+    
+  }
+  #workgraphic{
+    margin:0;
+  }
+  .video1 iframe {
+    padding:0;
+    width:90%;
+    height:90%;
+    left:5%;
+  }
+  .more {display:none;}
+    .tab{
+      text-align: center;
+    }
+}
 #btn{
   display:flex;
   flex-direction: column;
