@@ -390,7 +390,7 @@ margin:30px;
 }
 
 
-/* CSS for screens less than 767px */
+
 @media screen and (max-width: 1200px) {
   .circle1,
   .circle2,
@@ -458,6 +458,10 @@ margin:30px;
   .more {display:none;}
     .tab{
       text-align: center;
+    }
+	  #video{
+      padding:0;
+      padding-bottom: 20px;
     }
 }
 #btn{
