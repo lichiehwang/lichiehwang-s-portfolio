@@ -50,7 +50,9 @@ body {
   
   .article-body h3 {
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
+    border-bottom: #1ca9e3 1px solid;
+    display:inline-block;
   }
   
   .article-body h3:not(:first-child) {
