@@ -26,15 +26,20 @@ $(document).ready(function() {
       var Box = $(element).children('.box');
       $(Box).slideDown(500);
     });
-    // Toggle all sections
-   $('#toggleAllSections').on('click', function() {
-    $('.title').toggleClass('close');
-    $('.box').slideToggle(500);
 
-    // Update button text
-    var buttonText = $(this).text() === 'Open All' ? 'Close All' : 'Open All';
-    $(this).text(buttonText);
-  });
+    // Toggle all sections
+    $('#toggleAllSections').on('click', function() {
+      $('.title').toggleClass('close');
+      $('.box').slideToggle(500);
+
+      // Update button text
+      var buttonText = $(this).text() === 'Open All' ? 'Close All' : 'Open All';
+      $(this).text(buttonText);
+      
+      // Toggle a class for the button itself
+      $(this).toggleClass('all-sections-open');
+    });
+
     // Show the circle1 and word elements
     $('.circle1, .word').show();
   });
@@ -47,7 +52,6 @@ $(document).ready(function() {
     console.log('Clicked:', title);
   });
 });
-
 // Function to handle hash ID for tabs
 function GethashID(hashIDName) {
   if (hashIDName) {
