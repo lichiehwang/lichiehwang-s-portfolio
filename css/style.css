@@ -106,7 +106,26 @@ html {
 #about {
   position: relative;
 }
-
+#toggleAllSections{
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 150px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #fff;
+	color: #fff;
+	transition: 0.5s;
+  font-size: 12px;
+  border-radius: 100vh;
+  background-color: #f0cbcc;
+}
+#toggleAllSections:hover {
+	color: #fff;
+	background: #1d2b70;
+}
 .accordion-area {
   max-width: 900px;
   margin: 200px auto;
