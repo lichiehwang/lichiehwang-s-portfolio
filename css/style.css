@@ -9,7 +9,7 @@ html {
   font-family: "Avenir";
 }
 #wrapper{
-  max-width: 1440px;
+ 
   margin:0 auto;
 }
 /* Header */
@@ -101,7 +101,11 @@ html {
   /* text-shadow: 4px 4px 6px #a29994; */
   text-align: center;
 }
-
+.headerbig{
+  margin:0 auto;
+  position:relative;
+  max-width:1600px;
+}
 /* About */
 #about {
   position: relative;
