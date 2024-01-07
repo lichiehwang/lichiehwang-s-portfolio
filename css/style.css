@@ -257,6 +257,8 @@ html {
 }
 /* Work */
 #work {
+	max-width:2000px;
+	margin:0 auto;
   background-color: #1d2b70;
   padding: 30px;
   border: #ffffff 10px solid;
@@ -273,15 +275,15 @@ html {
 .web-container {
   margin: 0 auto;
   margin-top: 30px;
-  max-width: 1200px;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .web {
-  max-width: 300px;
-  max-height: 250px;
+  max-width: 500px;
+  max-height: 400px;
 margin:30px;
   
   text-align: center;
@@ -317,6 +319,8 @@ margin:30px;
 
 /* Graphic */
 #graphic {
+	max-width:2000px;
+	margin:0 auto;
   background-color: #f3f3f3;
   border: #f196a7 10px solid;
   padding: 50px;
@@ -332,7 +336,7 @@ margin:30px;
 
 .graflex {
   margin: 0 auto;
-  max-width: 1200px;
+ 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -343,6 +347,8 @@ margin:30px;
 /* workgraphic */
 /* video */
 #video {
+	max-width:2000px;
+	margin:0 auto;
   background-color: #1d2b70;
   padding: 50px;
   border: #ffffff 10px solid;
